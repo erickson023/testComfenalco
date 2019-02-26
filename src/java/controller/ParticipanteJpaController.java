@@ -142,12 +142,12 @@ public class ParticipanteJpaController implements Serializable {
             }
             List<String> illegalOrphanMessages = null;
             List<PptePremio> pptePremioListOrphanCheck = participante.getPptePremioList();
-            for (PptePremio pptePremioListOrphanCheckPptePremio : pptePremioListOrphanCheck) {
-                if (illegalOrphanMessages == null) {
-                    illegalOrphanMessages = new ArrayList<String>();
-                }
-                illegalOrphanMessages.add("This Participante (" + participante + ") cannot be destroyed since the PptePremio " + pptePremioListOrphanCheckPptePremio + " in its pptePremioList field has a non-nullable numdocPart field.");
-            }
+//            for (PptePremio pptePremioListOrphanCheckPptePremio : pptePremioListOrphanCheck) {
+//                if (illegalOrphanMessages == null) {
+//                    illegalOrphanMessages = new ArrayList<String>();
+//                }
+//                illegalOrphanMessages.add("This Participante (" + participante + ") cannot be destroyed since the PptePremio " + pptePremioListOrphanCheckPptePremio + " in its pptePremioList field has a non-nullable numdocPart field.");
+//            }
             if (illegalOrphanMessages != null) {
                 throw new IllegalOrphanException(illegalOrphanMessages);
             }

@@ -19,9 +19,11 @@ import modelo.Premio;
 public class Sorteo {
     
     public void sortear(){
+        
         ParticipanteJpaController ppte = new ParticipanteJpaController(Persistence.createEntityManagerFactory("testComfenalcoPU"));
         PptePremioJpaController pptPremio = new PptePremioJpaController(Persistence.createEntityManagerFactory("testComfenalcoPU"));
         PremioJpaController premio = new PremioJpaController(Persistence.createEntityManagerFactory("testComfenalcoPU"));
+        
         List<Participante> participantes = ppte.findParticipanteEntities();
         List<Premio> premios = premio.premiosEntregar();
         

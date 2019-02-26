@@ -45,7 +45,7 @@
                     </ul>
                     <ul class="navbar-nav nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="participante.jsp" style="font-weight: bold">Paticipantes</a>
+                            <a class="nav-link" href="listaParticipantes.jsp" style="font-weight: bold">Paticipantes</a>
                         </li>
                     </ul>
 

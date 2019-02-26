@@ -8,6 +8,14 @@
         <servlet-name>Sortear</servlet-name>
         <servlet-class>servlets.Sortear</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>Participante</servlet-name>
+        <servlet-class>servlets.RegistrarParticipante</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>EliminarParticipante</servlet-name>
+        <servlet-class>servlets.EliminarParticipante</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>ganadores</servlet-name>
         <url-pattern>/ganadores</url-pattern>
@@ -15,6 +23,14 @@
     <servlet-mapping>
         <servlet-name>Sortear</servlet-name>
         <url-pattern>/Sortear</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Participante</servlet-name>
+        <url-pattern>/Participante</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>EliminarParticipante</servlet-name>
+        <url-pattern>/EliminarParticipante</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
